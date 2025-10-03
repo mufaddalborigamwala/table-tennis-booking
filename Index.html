@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Tennis Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Table Tennis Booking</h1>
+
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="tel" id="phone" placeholder="Phone Number" required />
+
+    <label>Select Date:</label>
+    <input type="date" id="date" required />
+
+    <label>From Time:</label>
+    <input type="time" id="fromTime" required />
+
+    <label>To Time:</label>
+    <input type="time" id="toTime" required />
+
+    <label>Payment Method:</label>
+    <select id="payment" required>
+      <option value="cash">Cash</option>
+      <option value="upi">UPI</option>
+    </select>
+
+    <button type="submit">Book Slot</button>
+  </form>
+
+  <script src="bookings.js"></script>
+</body>
+</html>
